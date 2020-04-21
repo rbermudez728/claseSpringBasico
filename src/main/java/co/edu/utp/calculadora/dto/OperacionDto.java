@@ -1,16 +1,7 @@
-package co.edu.utp.calculadora.model.entity;
+package co.edu.utp.calculadora.dto;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+public class OperacionDto {
 
-@Entity
-public class Operacion {
-	
-	@Id
-	@GeneratedValue
-	private Integer iid;
-	
 	private Integer operador1;
 	private Integer operador2;
 	private Integer resultado;
@@ -39,12 +30,6 @@ public class Operacion {
 		this.resultado = resultado;
 	}
 
-	public Integer getIid() {
-		return iid;
-	}
-
-	public void setIid(Integer iid) {
-		this.iid = iid;
-	}
-	
 }
+
+// DATA TRANSFER OBJECT

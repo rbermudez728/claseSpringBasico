@@ -1,9 +1,11 @@
 package co.edu.utp.calculadora.service;
 
-import co.edu.utp.calculadora.dto.Operacion;
+import co.edu.utp.calculadora.dto.OperacionDto;
 
 public interface SumaService {
 	
-	Operacion sumar(Operacion operacion);
+	OperacionDto sumar(OperacionDto operacion);
+
+	Boolean eliminarOperacion(Integer id);
 
 }
